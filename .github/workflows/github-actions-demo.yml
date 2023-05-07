@@ -20,12 +20,12 @@ jobs:
     steps:
       - run: echo "This is job 1 of pipeline"
   Job2:
-    needs: Job 1
+    needs: Job1
     runs-on: ubuntu-latest
     steps:
       - run: echo "This is job 2 of pipeline"
   Job3:
-    needs: Job 2
+    needs: Job2
     runs-on: ubuntu-latest
     steps:
       - run: echo "This is job 3 of pipeline"
