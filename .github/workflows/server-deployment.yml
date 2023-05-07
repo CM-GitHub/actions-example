@@ -1,13 +1,13 @@
 name: Server Deployment
 on:
-	push:
-  	branches:
+  push:
+    branches:
       - main
 jobs:
-	deployment:
-  	runs-on: ubuntu-latest
+  deployment:
+    runs-on: ubuntu-latest
     steps:
       - name: Check out
-        uses: actions/checkout@v3
-      - name: Say Hello!
+        uses: actions/checkout@v2
+      - name: Say hello
         run: echo "Hello there!"
