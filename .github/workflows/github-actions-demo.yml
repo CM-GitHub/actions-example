@@ -14,17 +14,17 @@ jobs:
       - run: echo “🖥️ The workflow is now ready to test your code on the runner.”
       - name: List files in the repository
         run: ls ${{ github.workspace }}
-  Job 1:
+  Job1:
     needs: Explore-GitHub-Actions
     runs-on: ubuntu-latest
     steps:
       - run: echo "This is job 1 of pipeline"
-  Job 2:
+  Job2:
     needs: Job 1
     runs-on: ubuntu-latest
     steps:
       - run: echo "This is job 2 of pipeline"
-  Job 3:
+  Job3:
     needs: Job 2
     runs-on: ubuntu-latest
     steps:
